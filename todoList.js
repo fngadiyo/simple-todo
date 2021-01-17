@@ -24,7 +24,7 @@ const createTodoFile = () => {
 
 const addTodo = () => {
     const todo = prompt('what will you do: ')
-    fs.appendFileSync('todo.txt', todo)
+    fs.appendFileSync('todo.txt', todo + '\n')
 }
 
 const deleteTodoFile = () => {
